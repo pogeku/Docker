@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  systemEx:
+    image: bkimminich/juice-shop
+    container_name: juice_shop
+    ports:
+      - '1132:3000'

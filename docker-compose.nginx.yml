@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    container_name: nginx-master
+    image: nginx:latest
+    depends_on:
+      - db
+    ports:
+      - "80:80"
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: devon
+      

@@ -1,0 +1,51 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "192.168.177.128",
+            "port": 1902,
+            "driver": "MySQL",
+            "username": "Controller",
+            "password": "IZ@r!1NkDp8}DJ",
+            "name": "MainMySQL",
+            "database": "main"
+        },
+        {
+            "previewLimit": 50,
+            "server": "192.168.177.128",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "MainConnection",
+            "database": "postgres",
+            "username": "MySQL",
+            "password": "NkDp#91Sb2@3"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "192.168.160.147",
+            "port": 2405,
+            "driver": "MySQL",
+            "username": "root",
+            "database": "a",
+            "name": "Parapapa"
+        },
+        {
+            "previewLimit": 50,
+            "server": "192.168.160.147",
+            "port": 2403,
+            "driver": "PostgreSQL",
+            "database": "main_db",
+            "name": "Parapapa",
+            "username": "Merfolk",
+            "password": "ferocal12093"
+        }
+    ]
+}

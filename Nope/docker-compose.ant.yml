@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  ant:
+    image: library/ant:latest
+    container_name: ant
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+    command: ant
+
+volumes:
+  ant_repository:

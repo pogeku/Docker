@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  maven:
+    image: maven:latest
+    container_name: maven
+    working_dir: /usr/src/app
+    volumes:
+      - ./project:/usr/src/app
+      - maven_repo:/root/.m2
+    command: mvn clean install
+
+volumes:
+  maven_repo:

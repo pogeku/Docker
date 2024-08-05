@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  gradle:
+    image: gradle:latest
+    container_name: gradle
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+      - gradle_cache:/home/gradle/.gradle
+    command: gradle build
+
+volumes:
+  gradle_cache:

@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  main-db:
+    image: mysql:latest
+    container_name: main-mysql
+    # restart: always
+    environment: 
+      MYSQL_ROOT_PASSWORD: 'fero09102'
+      MYSQL_DATABASE: 'zero-cad'
+      MYSQL_USER: 'Merfolk'
+      MYSQL_PASSWORD: 'ferocal12093'
+    ports:
+      - '2405:3306'
+    # expose:
+    #  - '1040'
+    volumes:
+      - mysqlA:/var/lib/mysql
+
+volumes:
+  mysqlA:
